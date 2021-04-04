@@ -12,6 +12,7 @@ Resources Created By This Terraform Module:
 - Security Group to only allow UDP ingresss on ports 2456-2458
 
 Prerequisites:
+--------------
 - AWS Account
 - S3 bucket in which to store world backups (and terraform state)
 - AWS credentials stored as the default profile (get credentials and then use `aws configure`)
@@ -20,8 +21,8 @@ Prerequisites:
 - awscli session manager plugin (https://docs.aws.amazon.com/systems-manager/latest/userguide/session-manager-working-with-install-plugin.html)
 - jq (`brew install jq`)
 
-# How to deploy
-# -------------
+How to deploy
+-------------
 - Prepare
   - Create a new S3 bucket in your account
     - create a folder in the bucket called latest
