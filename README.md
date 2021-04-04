@@ -26,6 +26,7 @@ Prerequisites:
   - Create a new S3 bucket in your account
     - create a folder in the bucket called latest
     - copy your valheim world data from your local computer to this folder in your s3 bucket (files will have a `.db` and `.fwl` extension)
+  - Copy the example main.tf from [main.tf](examples/public/main.tf) and fill in any empty quotes `""` 
 - Build cloud resources
   - `terraform init; terraform plan` will show you what will be created 
   - `terraform init; terraform apply` will deploy everything after typing yes

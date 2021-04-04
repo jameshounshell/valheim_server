@@ -28,7 +28,7 @@ module "valheim_server" {
   world_name     = "SaltMine"   # the name of your world file
   instance_type  = "t3a.medium" # if your aws account is brand new, a t2.micro is free tier and should cost zero dollars to run for an entire year.
 
-  server_password = "var.server_password"
+  server_password = var.server_password
 
   providers = {
     aws = aws
